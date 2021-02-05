@@ -411,9 +411,9 @@ ul, li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .custom-caption {
@@ -439,6 +439,30 @@ ul, li {
   margin-top: 90px;
 }
 
+.navbar {
+  z-index: 9999;
+}
+
+.about {
+  height: 70vh;
+  width: 100%;
+}
+
+.about-pic {
+  width: 500px;
+  max-width: 100%;
+  height: 200px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.about-pic img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 @media screen and (min-width: 960px) {
   .marginl {
     margin-left: 200px;
@@ -452,12 +476,16 @@ ul, li {
     left: -30%;
   }
   .flex {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
+}
+
+.about {
+  margin-top: 100px;
 }
 /*# sourceMappingURL=main.css.map */
